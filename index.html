@@ -3,656 +3,596 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ariel Gholar — Senior Data Scientist</title>
-  <meta name="description" content="Senior Data Scientist at Intuit, UC Berkeley MIDS graduate student, and maker. $30M+ in incremental revenue across 40+ experiments." />
+
+  <!-- Primary meta -->
+  <title>Ariel Gholar · Senior Data Scientist</title>
+  <meta name="description" content="Ariel Gholar · Senior Data Scientist at Intuit and UC Berkeley MIDS student. Experimentation that shipped $30M+ in revenue and sized $300M+ in risk." />
+  <meta name="author" content="Ariel Gholar" />
+  <link rel="canonical" href="https://arielgholar.github.io/" />
+
+  <!-- Favicon (SVG AG monogram on sunset gradient) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Theme color (matches Iris ground) -->
+  <meta name="theme-color" content="#0F0D1A" />
+
+  <!-- Open Graph (LinkedIn, Slack, iMessage, Discord previews) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Ariel Gholar" />
+  <meta property="og:title" content="Ariel Gholar · Senior Data Scientist" />
+  <meta property="og:description" content="Senior Data Scientist at Intuit and UC Berkeley MIDS student. Experimentation that shipped $30M+ in revenue and sized $300M+ in risk." />
+  <meta property="og:url" content="https://arielgholar.github.io/" />
+  <meta property="og:image" content="https://arielgholar.github.io/images/headshot.jpg" />
+  <meta property="og:image:alt" content="Portrait of Ariel Gholar" />
+  <meta property="profile:first_name" content="Ariel" />
+  <meta property="profile:last_name" content="Gholar" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ariel Gholar · Senior Data Scientist" />
+  <meta name="twitter:description" content="Senior Data Scientist at Intuit and UC Berkeley MIDS student. Experimentation that shipped $30M+ in revenue and sized $300M+ in risk." />
+  <meta name="twitter:image" content="https://arielgholar.github.io/images/headshot.jpg" />
+  <meta name="twitter:image:alt" content="Portrait of Ariel Gholar" />
+
+  <!-- Schema.org Person (Knowledge Graph entity binding) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ariel Gholar",
+    "url": "https://arielgholar.github.io/",
+    "jobTitle": "Senior Data Scientist",
+    "image": "https://arielgholar.github.io/images/headshot.jpg",
+    "email": "mailto:arielgholar@gmail.com",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Intuit",
+      "url": "https://www.intuit.com/"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Berkeley",
+        "url": "https://ischool.berkeley.edu/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Florida",
+        "url": "https://warrington.ufl.edu/"
+      }
+    ],
+    "sameAs": [
+      "https://linkedin.com/in/arielgholar",
+      "https://github.com/arielgholar"
+    ],
+    "knowsAbout": [
+      "Experimentation Design",
+      "A/B Testing",
+      "Bayesian Testing",
+      "Non-Inferiority Testing",
+      "Causal Inference",
+      "Data Science",
+      "Analytics Governance",
+      "TurboTax"
+    ],
+    "description": "Senior Data Scientist at Intuit and UC Berkeley MIDS graduate student. Experimentation and analytics that shipped $30M+ in incremental revenue and sized $300M+ in revenue risk."
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ============ SIDEBAR ============ -->
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-inner">
-      <div class="sidebar-top">
-        <a href="#top" class="sidebar-brand">
-          <span class="brand-mark">AG</span>
-          <span class="brand-name">Ariel Gholar</span>
-        </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Ariel Gholar, home">
+        <span class="ag-mark" aria-hidden="true">AG</span>
+        <span class="nav__name">Ariel Gholar</span>
+      </a>
 
-      <ul class="sidebar-links" id="navLinks">
-        <li><a href="#about">About</a></li>
+      <ul class="nav__links" id="navLinks">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="sidebar-socials">
-        <a href="mailto:arielgholar@gmail.com" aria-label="Email" class="social-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/arielgholar" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-        </a>
-        <a href="https://github.com/arielgholar" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
+      <div class="nav__bottom">
+        <a href="mailto:arielgholar@gmail.com" class="open-pill" aria-label="Open to roles, contact via email">
+          <span class="open-pill__dot" aria-hidden="true"></span>
+          Open to roles
         </a>
       </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </aside>
+  </nav>
 
-  <main class="main-content">
+  <main id="top">
 
-  <!-- ============ HERO ============ -->
-  <header class="hero" id="top">
-    <div class="container">
-     <div class="hero-grid">
-      <div class="hero-content">
-        <h1 class="hero-name">ARIEL GHOLAR</h1>
-        <p class="hero-tagline">Senior Data Scientist &middot; UC Berkeley MIDS</p>
-        <hr class="hero-rule" />
-        <p class="hero-bio">
-          <span class="hero-bio-lead">I design experiments that move the needle.</span><span class="hero-bio-rest"> At Intuit, that's meant $30M+ in incremental revenue across 40+ tests and tooling now used by 70+ data scientists company-wide. I'm a 4.0 MIDS student at UC Berkeley, a first-generation college graduate, and a musician with 20+ years across Hindustani Indian classical and Caribbean Chutney and Soca music genres. I built this path on my own &mdash; and I'm just getting started.</span>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="hero__glow hero__glow--pink" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--lavender" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="role-chip">
+          <span class="role-chip__dot" aria-hidden="true"></span>
+          Senior Data Scientist · UC Berkeley MIDS
+        </div>
+
+        <h1 class="hero__name t-display gradient-text">ARIEL<br />GHOLAR</h1>
+
+        <p class="hero__tagline t-tagline">
+          I design experiments that move the needle, then translate the results into decisions worth tens of millions.
         </p>
 
-        <div class="hero-socials">
-          <a href="https://linkedin.com/in/arielgholar" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-social-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-              <rect x="2" y="9" width="4" height="12"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">
+            Contact Me <span aria-hidden="true">→</span>
           </a>
-        </div>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary">Contact Me</a>
-          <a href="#experience" class="btn btn-outline">View Work</a>
+          <a href="#experience" class="btn btn--pink">View Work</a>
         </div>
 
-        <div class="metrics">
-          <div class="metric">
-            <div class="metric-value" data-target="30" data-prefix="$" data-suffix="M+">$0M+</div>
-            <div class="metric-label">incremental revenue</div>
+        <div class="stat-band">
+          <div class="stat-band__item">
+            <div class="stat-band__value">$30M+</div>
+            <div class="stat-band__label">incremental revenue shipped</div>
+            <div class="stat-band__caption">40+ experiments, 50K+ conversions</div>
           </div>
-          <div class="metric">
-            <div class="metric-value" data-target="40" data-suffix="+">0+</div>
-            <div class="metric-label">experiments led</div>
+          <div class="stat-band__item">
+            <div class="stat-band__value">$300M+</div>
+            <div class="stat-band__label">revenue risk sized</div>
+            <div class="stat-band__caption">non-inferiority testing + seasonal regression extrapolation</div>
           </div>
-          <div class="metric">
-            <div class="metric-value" data-target="70" data-suffix="+">0+</div>
-            <div class="metric-label">data scientists enabled</div>
-          </div>
-          <div class="metric">
-            <div class="metric-value">4.0</div>
-            <div class="metric-label">MIDS grad GPA</div>
+          <div class="stat-band__item">
+            <div class="stat-band__value">70+</div>
+            <div class="stat-band__label">data scientists enabled</div>
+            <div class="stat-band__caption">reusable low-code reporting adopted org-wide</div>
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="hero-portrait-wrap">
-        <div class="hero-portrait-ring" aria-hidden="true"></div>
-        <img src="images/portrait.jpg" alt="Ariel Gholar" class="hero-portrait" />
-      </div>
-     </div>
-    </div>
-  </header>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-header reveal">About Me</h2>
-      <p class="section-sublabel reveal">Senior Data Scientist · UC Berkeley MIDS · First-generation college graduate</p>
-
-      <div class="about-grid">
-        <div class="about-portrait-wrap reveal">
-          <img src="images/headshot.jpg" alt="Ariel Gholar" class="about-portrait" />
-          <div class="about-quick-facts">
-            <div class="quick-fact">
-              <div class="qf-value">5</div>
-              <div class="qf-label">years at Intuit</div>
-            </div>
-            <div class="quick-fact">
-              <div class="qf-value">4.0</div>
-              <div class="qf-label">grad GPA</div>
-            </div>
-            <div class="quick-fact">
-              <div class="qf-value">6</div>
-              <div class="qf-label">certifications</div>
-            </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--about" id="about">
+      <div class="container">
+        <div class="section-label">
+          <div class="section-label__bar">
+            <span class="section-label__num">01</span>
+            <span class="section-label__rule" aria-hidden="true"></span>
+            <span class="section-label__kicker">The person behind the metrics</span>
           </div>
+          <h2 class="section-label__title">About</h2>
         </div>
 
-        <div class="about-content reveal">
-          <p>
-            I'm a Senior Data Scientist on TurboTax Frontdoors at Intuit, where I lead experimentation and analytical strategy across some of the company's highest-traffic surfaces. My work translates messy product questions into rigorous tests — and translates the results back into decisions worth tens of millions of dollars.
-          </p>
-          <p>
-            I'm also a UC Berkeley MIDS graduate student (4.0 GPA) and a first-generation college graduate. I built this career entirely on my own — no roadmap from family, no shortcuts — and I bring that same self-directed rigor to every problem I take on.
-          </p>
+        <div class="about__stack">
+          <div class="about__portrait">
+            <img src="images/headshot.jpg" alt="Portrait of Ariel Gholar" />
+          </div>
 
-          <h3 class="about-subhead">Core Skills</h3>
+          <div class="about__stats">
+            <div class="stat-card">
+              <div class="stat-card__value">5</div>
+              <div class="stat-card__label">years at Intuit</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">4.0</div>
+              <div class="stat-card__label">MIDS GPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__value">6</div>
+              <div class="stat-card__label">industry certifications</div>
+            </div>
+          </div>
 
-          <div class="skill-bars">
-            <div class="skill-bar reveal" data-fill="100">
-              <div class="skill-meta"><span class="skill-name">SQL</span><span class="skill-pct">100%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="100">
-              <div class="skill-meta"><span class="skill-name">A/B Testing</span><span class="skill-pct">100%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="100">
-              <div class="skill-meta"><span class="skill-name">Qlik Sense</span><span class="skill-pct">100%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="95">
-              <div class="skill-meta"><span class="skill-name">Excel</span><span class="skill-pct">95%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="92">
-              <div class="skill-meta"><span class="skill-name">Python</span><span class="skill-pct">92%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="90">
-              <div class="skill-meta"><span class="skill-name">Bayesian Testing</span><span class="skill-pct">90%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="90">
-              <div class="skill-meta"><span class="skill-name">Tableau</span><span class="skill-pct">90%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="88">
-              <div class="skill-meta"><span class="skill-name">Predictive Modeling</span><span class="skill-pct">88%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="85">
-              <div class="skill-meta"><span class="skill-name">Databricks</span><span class="skill-pct">85%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-bar reveal" data-fill="75">
-              <div class="skill-meta"><span class="skill-name">Causal Inference</span><span class="skill-pct">75%</span></div>
-              <div class="skill-track"><div class="skill-fill"></div></div>
-            </div>
+          <div class="about__body">
+            <p class="t-body-lg">
+              I'm a Senior Data Scientist on <span class="hl-lavender">TurboTax Frontdoors</span> at Intuit, where I lead experimentation and analytical strategy across some of the company's highest-traffic surfaces.
+            </p>
+            <p class="t-body-lg">
+              My work translates messy product questions into rigorous tests, then translates the results back into decisions worth tens of millions of dollars. I'm also a UC Berkeley MIDS graduate student with a 4.0 GPA and a <span class="hl-pink">first-generation college graduate</span>.
+            </p>
+            <p class="t-body-lg">
+              I built this career entirely on my own, without a roadmap from family or shortcuts of any kind. I bring that same self-directed rigor to every problem I take on.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ EXPERIENCE ============ -->
-  <section class="alt-bg" id="experience">
-    <div class="container">
-      <h2 class="section-header reveal">Work Experience</h2>
-      <p class="section-sublabel reveal">Intuit &middot; Mountain View, CA</p>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--experience" id="experience">
+      <div class="container">
+        <div class="section-label">
+          <div class="section-label__bar">
+            <span class="section-label__num">02</span>
+            <span class="section-label__rule" aria-hidden="true"></span>
+            <span class="section-label__kicker">Five years of compounding scope at Intuit</span>
+          </div>
+          <h2 class="section-label__title">Experience</h2>
+        </div>
 
-      <div class="timeline">
-        <div class="timeline-roles">
+        <ol class="timeline">
 
-          <article class="role reveal">
-            <div class="role-date">June 2024 – Present</div>
-            <div class="role-header">
-              <h3 class="role-title">Senior Data Scientist</h3>
-              <span class="company-chip">Intuit</span>
+          <li class="timeline__item timeline__item--current">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__meta">
+              <span class="timeline__dates t-eyebrow">June 2024 – Present</span>
+              <span class="chip chip--pink">Current</span>
             </div>
-            <p class="role-team">TurboTax Frontdoors Data Science Team</p>
-            <ul class="role-bullets">
+            <h3 class="timeline__title">Senior Data Scientist</h3>
+            <p class="timeline__org">Intuit · TurboTax Frontdoors Data Science Team</p>
+            <ul class="timeline__bullets">
               <li>Delivered critical results for 40+ experiments, generating 50K+ incremental units and $30M+ in incremental revenue</li>
               <li>Estimated $300M+ annual revenue risk using predictive modeling and non-inferiority testing to inform Product and Finance forecasting</li>
               <li>Created key low-code assets adopted by 70+ data scientists, accelerating experimentation execution and reporting org-wide</li>
               <li>Executes end-to-end A/B testing (Frequentist, Bayesian, MAB) to optimize landing pages, user funnels, and navigation flows</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="role reveal">
-            <div class="role-date">November 2023 – June 2024</div>
-            <div class="role-header">
-              <h3 class="role-title">Senior Business Data Analyst</h3>
-              <span class="company-chip">Intuit</span>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__meta">
+              <span class="timeline__dates t-eyebrow">November 2023 – June 2024</span>
             </div>
-            <p class="role-team">TurboTax Business Model Evolution Analytics</p>
-            <ul class="role-bullets">
+            <h3 class="timeline__title">Senior Business Data Analyst</h3>
+            <p class="timeline__org">Intuit · TurboTax Business Model Evolution Analytics</p>
+            <ul class="timeline__bullets">
               <li>Created and managed 4 Tableau dashboards delivering daily revenue and conversion insights, saving 10 weekly hours</li>
               <li>Presented data insights weekly to cross-functional stakeholders and executives, leading to $47M in experimentation budget savings</li>
               <li>Optimized data pipelines, cutting executive dashboard reload time by 30%</li>
               <li>Directed the launch of 4 extensive experiments, ensuring precise sample sizing for traffic allocation</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="role reveal">
-            <div class="role-date">October 2022 – November 2023</div>
-            <div class="role-header">
-              <h3 class="role-title">Senior Business Data Analyst</h3>
-              <span class="company-chip">Intuit</span>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__meta">
+              <span class="timeline__dates t-eyebrow">October 2022 – November 2023</span>
             </div>
-            <p class="role-team">Data Intelligence &amp; Analytics Governance</p>
-            <ul class="role-bullets">
+            <h3 class="timeline__title">Senior Business Data Analyst</h3>
+            <p class="timeline__org">Intuit · Data Intelligence &amp; Analytics Governance</p>
+            <ul class="timeline__bullets">
               <li>Automated a critical process yielding 108 annual manual hours saved</li>
               <li>Delivered Qlik Sense dashboards to Analytics leaders, saving 16,543,172 CPU cycles on Intuit's BI servers</li>
               <li>Implemented dashboard solutions using SQL and Python, reducing data analysis and reporting time by 40%</li>
               <li>Created Python and SQL notebook templates in Databricks, cutting report generation time by 30%</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="role reveal">
-            <div class="role-date">June 2021 – October 2022</div>
-            <div class="role-header">
-              <h3 class="role-title">Business Data Analyst</h3>
-              <span class="company-chip">Intuit</span>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__meta">
+              <span class="timeline__dates t-eyebrow">June 2021 – October 2022</span>
             </div>
-            <p class="role-team">Corporate Finance and Data Analytics</p>
-            <ul class="role-bullets">
+            <h3 class="timeline__title">Business Data Analyst</h3>
+            <p class="timeline__org">Intuit · Corporate Finance and Data Analytics</p>
+            <ul class="timeline__bullets">
               <li>Built key data pipelines to power operational and exploratory analysis across cross-functional groups</li>
               <li>Defined, implemented, and standardized metrics, reports, and dashboards using Qlik Sense, Python, SQL, HQL, and React</li>
               <li>Collaborated with senior leaders to develop data-driven solutions to complex business problems</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="role reveal">
-            <div class="role-date">January 2021 – July 2021</div>
-            <div class="role-header">
-              <h3 class="role-title">Financial Analyst</h3>
-              <span class="company-chip">Intuit</span>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__meta">
+              <span class="timeline__dates t-eyebrow">January 2021 – July 2021</span>
             </div>
-            <p class="role-team">Customer Success &amp; TurboTax Expense</p>
-            <ul class="role-bullets">
+            <h3 class="timeline__title">Financial Analyst</h3>
+            <p class="timeline__org">Intuit · Customer Success &amp; TurboTax Expense</p>
+            <ul class="timeline__bullets">
               <li>Developed and maintained budget forecasting and management models</li>
               <li>Managed daily FP&amp;A processes including headcount, contingent workforce, and purchase order tracking</li>
               <li>Drove various analyses that delivered data-driven insights to promote business outcomes</li>
               <li>Partnered effectively with cross-functional teams</li>
               <li>Communicated effectively both verbally and in writing with senior leaders</li>
             </ul>
+          </li>
+
+          <li class="timeline__earlier">
+            <button class="timeline__expand" id="earlierToggle" aria-expanded="false" aria-controls="earlierContent">
+              <span>Earlier career</span>
+              <span class="arrow" aria-hidden="true">↓</span>
+            </button>
+
+            <div class="timeline__earlier-content" id="earlierContent" data-open="false">
+
+              <div class="earlier-org">
+                <h4>University of Florida</h4>
+                <p class="earlier-org__meta">Gainesville, FL</p>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Procurement Agent <span class="earlier-role__dates">· Oct 2020 – Jan 2021</span></p>
+                  <ul>
+                    <li>Conferred with university officials to determine their needs and budgetary requirements</li>
+                    <li>Maintained vendor contracts and price quotes and issued purchase orders</li>
+                    <li>Prepared bid specifications, legal advertisements, and formal bid invitations</li>
+                    <li>Maintained classified active mailing lists of eligible vendors</li>
+                    <li>Screened requisitions, purchase orders, vouchers, and reports for accuracy</li>
+                    <li>Maintained a perpetual inventory on all supplies</li>
+                  </ul>
+                </div>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Multicultural &amp; Diversity Affairs Ambassador <span class="earlier-role__dates">· Aug 2020 – Oct 2020</span></p>
+                  <ul>
+                    <li>Staffed the front desk of the Asian Pacific Islander Desi Affairs Center</li>
+                    <li>Conducted tours for the APIDA Suite</li>
+                    <li>Assisted with APIDA initiatives and programs</li>
+                    <li>Planned and coordinated initiatives within Multicultural &amp; Diversity Affairs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="earlier-org">
+                <h4>Intuit</h4>
+                <p class="earlier-org__meta">Mountain View, CA · Intern</p>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Business Systems Analyst Intern <span class="earlier-role__dates">· May 2020 – Aug 2020</span></p>
+                  <ul>
+                    <li>Analyzed complex business problems to be solved with automated systems</li>
+                    <li>Provided technical expertise in identifying, evaluating, and developing systems</li>
+                    <li>Configured system settings and options</li>
+                    <li>Designed details of automated systems</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="earlier-org">
+                <h4>Naylor Association Solutions, LLC</h4>
+                <p class="earlier-org__meta">Gainesville, FL</p>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Financial Analyst Intern <span class="earlier-role__dates">· Jan 2020 – May 2020</span></p>
+                  <ul>
+                    <li>Researched and assisted in the preparation of the company's financial statements</li>
+                    <li>Assisted in the creation of weekly financial reporting for various business divisions</li>
+                    <li>Analyzed business solutions to uncover trends and opportunities through Domo</li>
+                    <li>Analyzed the company's past financial performance to assist in the creation of forecasted values</li>
+                    <li>Assisted with the creation of Domo-cards and accuracy spotting</li>
+                    <li>Analyzed the P&amp;L statements of multiple projects for clients</li>
+                    <li>Researched various methods to enhance and organize the Slack system</li>
+                    <li>Performed daily updates of the company's career pacing tool</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="earlier-org">
+                <h4>Florida Museum of Natural History</h4>
+                <p class="earlier-org__meta">Gainesville, FL</p>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Visitor Services Associate <span class="earlier-role__dates">· Aug 2017 – Dec 2019</span></p>
+                  <ul>
+                    <li>Performed intake on new inventory, logging invoices for each purchase order</li>
+                    <li>Managed and handled all cash, credit cards, and traveler's checks in register up to $2,000 a day</li>
+                    <li>Organized and restocked inventory</li>
+                    <li>Collected data about Museum visitors for the Marketing Department by conducting 50 visitor surveys a day</li>
+                    <li>Trained and oversaw a department staff of 14–15 employees on weekends</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="earlier-org">
+                <h4>Weiser Law Firm, PA</h4>
+                <p class="earlier-org__meta">Gainesville, FL</p>
+
+                <div class="earlier-role">
+                  <p class="earlier-role__title">Legal Assistant <span class="earlier-role__dates">· May 2018 – Aug 2018</span></p>
+                  <ul>
+                    <li>Single-handedly administered meetings with clients, establishing trust between client and firm</li>
+                    <li>Researched immigration and government regulations, case law, and procedures</li>
+                    <li>Advocated and communicated extensively with clients regarding requests and case status</li>
+                    <li>Managed and maintained a personal case load of 5–10 cases at a time</li>
+                    <li>Collaborated with government liaisons such as foreign embassies and US immigration officers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--education" id="education">
+      <div class="container">
+        <div class="section-label">
+          <div class="section-label__bar">
+            <span class="section-label__num">03</span>
+            <span class="section-label__rule" aria-hidden="true"></span>
+            <span class="section-label__kicker">Where the foundation got built</span>
+          </div>
+          <h2 class="section-label__title">Education</h2>
+        </div>
+
+        <div class="education__grid">
+          <article class="edu-card edu-card--highlight">
+            <div class="edu-card__top">
+              <span class="t-eyebrow">August 2024 – Present</span>
+              <span class="chip chip--lavender">In progress</span>
+            </div>
+            <h3 class="edu-card__school">University of California, Berkeley</h3>
+            <p class="edu-card__degree edu-card__degree--accent">Master of Information and Data Science</p>
+            <p class="edu-card__note">4.0 GPA · School of Information</p>
           </article>
 
-        </div>
-      </div>
-
-      <div class="earlier-toggle-wrap reveal">
-        <button class="earlier-toggle" id="earlierToggle" aria-expanded="false" aria-controls="earlierContent">
-          <span>Earlier Career</span>
-          <span class="chev">▾</span>
-        </button>
-      </div>
-
-      <div class="earlier-content" id="earlierContent">
-        <div class="earlier-org">
-          <h4>University of Florida</h4>
-          <p class="org-meta">Gainesville, FL</p>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Procurement Agent <span class="earlier-role-dates">· Oct 2020 – Jan 2021</span></p>
-            <ul>
-              <li>Conferred with university officials to determine their needs and budgetary requirements</li>
-              <li>Maintained vendor contracts and price quotes and issued purchase orders</li>
-              <li>Prepared bid specifications, legal advertisements, and formal bid invitations</li>
-              <li>Maintained classified active mailing lists of eligible vendors</li>
-              <li>Screened requisitions, purchase orders, vouchers, and reports for accuracy</li>
-              <li>Maintained a perpetual inventory on all supplies</li>
-            </ul>
-          </div>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Multicultural &amp; Diversity Affairs Ambassador <span class="earlier-role-dates">· Aug 2020 – Oct 2020</span></p>
-            <ul>
-              <li>Staffed the front desk of the Asian Pacific Islander Desi Affairs Center</li>
-              <li>Conducted tours for the APIDA Suite</li>
-              <li>Assisted with APIDA initiatives and programs</li>
-              <li>Planned and coordinated initiatives within Multicultural &amp; Diversity Affairs</li>
-            </ul>
-          </div>
+          <article class="edu-card">
+            <div class="edu-card__top">
+              <span class="t-eyebrow">Graduated December 2020</span>
+            </div>
+            <h3 class="edu-card__school">University of Florida</h3>
+            <p class="edu-card__degree">B.S. Business Administration · Finance</p>
+            <p class="edu-card__note">Warrington College of Business · UF Honors Program</p>
+          </article>
         </div>
 
-        <div class="earlier-org">
-          <h4>Intuit</h4>
-          <p class="org-meta">Mountain View, CA · Intern</p>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Business Systems Analyst Intern <span class="earlier-role-dates">· May 2020 – Aug 2020</span></p>
-            <ul>
-              <li>Analyzed complex business problems to be solved with automated systems</li>
-              <li>Provided technical expertise in identifying, evaluating, and developing systems</li>
-              <li>Configured system settings and options</li>
-              <li>Designed details of automated systems</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="earlier-org">
-          <h4>Naylor Association Solutions, LLC</h4>
-          <p class="org-meta">Gainesville, FL</p>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Financial Analyst Intern <span class="earlier-role-dates">· Jan 2020 – May 2020</span></p>
-            <ul>
-              <li>Researched and assisted in the preparation of the company's financial statements</li>
-              <li>Assisted in the creation of weekly financial reporting for various business divisions</li>
-              <li>Analyzed business solutions to uncover trends and opportunities through Domo</li>
-              <li>Analyzed the company's past financial performance to assist in the creation of forecasted values</li>
-              <li>Assisted with the creation of Domo-cards and accuracy spotting</li>
-              <li>Analyzed the P&amp;L statements of multiple projects for clients</li>
-              <li>Researched various methods to enhance and organize the Slack system</li>
-              <li>Performed daily updates of the company's career pacing tool</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="earlier-org">
-          <h4>Florida Museum of Natural History</h4>
-          <p class="org-meta">Gainesville, FL</p>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Visitor Services Associate <span class="earlier-role-dates">· Aug 2017 – Dec 2019</span></p>
-            <ul>
-              <li>Performed intake on new inventory, logging invoices for each purchase order</li>
-              <li>Managed and handled all cash, credit cards, and traveler's checks in register up to $2,000 a day</li>
-              <li>Organized and restocked inventory</li>
-              <li>Collected data about Museum visitors for the Marketing Department by conducting 50 visitor surveys a day</li>
-              <li>Trained and oversaw a department staff of 14–15 employees on weekends</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="earlier-org">
-          <h4>Weiser Law Firm, PA</h4>
-          <p class="org-meta">Gainesville, FL</p>
-
-          <div class="earlier-role">
-            <p class="earlier-role-title">Legal Assistant <span class="earlier-role-dates">· May 2018 – Aug 2018</span></p>
-            <ul>
-              <li>Single-handedly administered meetings with clients, establishing trust between client and firm</li>
-              <li>Researched immigration and government regulations, case law, and procedures</li>
-              <li>Advocated and communicated extensively with clients regarding requests and case status</li>
-              <li>Managed and maintained a personal case load of 5–10 cases at a time</li>
-              <li>Collaborated with government liaisons such as foreign embassies and US immigration officers</li>
-            </ul>
+        <div class="certs">
+          <span class="t-eyebrow certs__label">Certifications</span>
+          <div class="certs__chips">
+            <span class="chip chip--neutral">Qlik Sense</span>
+            <span class="chip chip--neutral">Tableau</span>
+            <span class="chip chip--neutral">Google Cloud</span>
+            <span class="chip chip--neutral">Microsoft Power BI</span>
+            <span class="chip chip--neutral">Salesforce</span>
+            <span class="chip chip--neutral">MOS Excel 2016</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ EDUCATION ============ -->
-  <section id="education">
-    <div class="container">
-      <h2 class="section-header reveal">Education</h2>
-
-      <div class="edu-primary reveal">
-        <h3 class="edu-school">University of California, Berkeley</h3>
-        <p class="edu-degree">Masters of Information and Data Science</p>
-        <div class="edu-meta">
-          <span>August 2024 – Present</span>
-          <span>&middot;</span>
-          <span>GPA: 4.0</span>
-          <span class="in-progress-chip">In Progress</span>
-        </div>
-      </div>
-
-      <div class="coursework reveal">
-        <h3>Graduate Coursework</h3>
-        <div class="course-grid">
-          <div class="course-card placeholder">
-            <div class="placeholder-text">Course details coming soon</div>
-            <div class="placeholder-note">syllabi in review</div>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--skills" id="skills">
+      <div class="container">
+        <div class="section-label">
+          <div class="section-label__bar">
+            <span class="section-label__num">04</span>
+            <span class="section-label__rule" aria-hidden="true"></span>
+            <span class="section-label__kicker">Methods, tools, languages, and domains</span>
           </div>
-          <div class="course-card empty" aria-hidden="true"></div>
-          <div class="course-card empty" aria-hidden="true"></div>
-          <div class="course-card empty" aria-hidden="true"></div>
-          <div class="course-card empty" aria-hidden="true"></div>
-          <div class="course-card empty" aria-hidden="true"></div>
+          <h2 class="section-label__title">Skills</h2>
         </div>
-      </div>
 
-      <div class="edu-secondary reveal" style="margin-top: 3.5rem;">
-        <h3 class="edu-school">University of Florida, Warrington College of Business</h3>
-        <p class="edu-degree">Bachelor of Science in Business Administration — Finance</p>
-        <div class="edu-meta">
-          <span>December 2020</span>
-          <span>&middot;</span>
-          <span>UF Honors Program</span>
-        </div>
-      </div>
-
-      <div class="certs reveal">
-        <h3>Certifications</h3>
-        <div class="cert-chips">
-          <span class="cert-chip">Qlik Sense</span>
-          <span class="cert-chip">Tableau</span>
-          <span class="cert-chip">Google Cloud</span>
-          <span class="cert-chip">Microsoft Power BI</span>
-          <span class="cert-chip">Salesforce</span>
-          <span class="cert-chip">Microsoft Office Specialist: Excel 2016</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS (full chip list) ============ -->
-  <section class="alt-bg" id="skills">
-    <div class="container">
-      <h2 class="section-header reveal">Skills</h2>
-      <p class="section-sublabel reveal">Methods, tools, and domains I work across.</p>
-
-      <div class="skill-secondary reveal">
-        <div class="chips">
-          <span class="chip">JavaScript</span>
-          <span class="chip">React</span>
-          <span class="chip">HQL</span>
-          <span class="chip">Java</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">GitHub</span>
-          <span class="chip">Google Cloud</span>
-          <span class="chip">Microsoft Power BI</span>
-          <span class="chip">Salesforce</span>
-          <span class="chip">Google Suite</span>
-          <span class="chip">PowerPoint</span>
-          <span class="chip">Multi-Armed Bandit</span>
-          <span class="chip">Non-Inferiority Testing</span>
-          <span class="chip">Frequentist Testing</span>
-          <span class="chip">Data Modeling</span>
-          <span class="chip">Customer Segmentation</span>
-          <span class="chip">Propensity Modeling</span>
-          <span class="chip">Experimentation Design</span>
-          <span class="chip">Analytics Governance</span>
-          <span class="chip">Metric Standardization</span>
-          <span class="chip">FP&amp;A</span>
-          <span class="chip">Executive Reporting</span>
-          <span class="chip">Cross-functional Stakeholder Management</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section id="testimonials">
-    <div class="container">
-      <h2 class="section-header reveal">Testimonials</h2>
-      <p class="section-sublabel reveal">From colleagues across my career.</p>
-
-      <div class="testimonial-grid">
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
+        <div class="skills">
+          <div class="skills__row">
+            <span class="skills__label t-eyebrow">Methods</span>
+            <div class="skills__chips">
+              <span class="chip chip--lavender">A/B Testing</span>
+              <span class="chip chip--lavender">Frequentist</span>
+              <span class="chip chip--lavender">Bayesian</span>
+              <span class="chip chip--lavender">Multi-Armed Bandit</span>
+              <span class="chip chip--lavender">Non-Inferiority</span>
+              <span class="chip chip--lavender">Causal Inference</span>
+              <span class="chip chip--lavender">Predictive Modeling</span>
+              <span class="chip chip--lavender">Customer Segmentation</span>
+              <span class="chip chip--lavender">Propensity Modeling</span>
+              <span class="chip chip--lavender">Experimentation Design</span>
             </div>
           </div>
-        </article>
 
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
+          <div class="skills__row">
+            <span class="skills__label t-eyebrow">Tools</span>
+            <div class="skills__chips">
+              <span class="chip chip--lavender">Tableau</span>
+              <span class="chip chip--lavender">Qlik Sense</span>
+              <span class="chip chip--lavender">Databricks</span>
+              <span class="chip chip--lavender">Microsoft Power BI</span>
+              <span class="chip chip--lavender">Google Cloud</span>
+              <span class="chip chip--lavender">Salesforce</span>
+              <span class="chip chip--lavender">Excel</span>
             </div>
           </div>
-        </article>
 
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
+          <div class="skills__row">
+            <span class="skills__label t-eyebrow">Languages</span>
+            <div class="skills__chips">
+              <span class="chip chip--lavender">SQL</span>
+              <span class="chip chip--lavender">Python</span>
+              <span class="chip chip--lavender">HQL</span>
+              <span class="chip chip--lavender">Java</span>
+              <span class="chip chip--lavender">JavaScript</span>
+              <span class="chip chip--lavender">React</span>
+              <span class="chip chip--lavender">HTML</span>
+              <span class="chip chip--lavender">CSS</span>
             </div>
           </div>
-        </article>
 
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
+          <div class="skills__row">
+            <span class="skills__label t-eyebrow">Domains</span>
+            <div class="skills__chips">
+              <span class="chip chip--pink">Analytics Governance</span>
+              <span class="chip chip--pink">Metric Standardization</span>
+              <span class="chip chip--pink">FP&amp;A</span>
+              <span class="chip chip--pink">Executive Reporting</span>
+              <span class="chip chip--pink">Cross-functional Stakeholder Management</span>
             </div>
           </div>
-        </article>
-
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- TODO: replace with real testimonial -->
-        <article class="testimonial-card placeholder reveal">
-          <div class="avatar-placeholder" aria-hidden="true"></div>
-          <div class="testimonial-body">
-            <div class="quote-mark">&ldquo;</div>
-            <p class="testimonial-quote">Testimonial coming soon — a quote from a colleague will live here once collected.</p>
-            <div class="testimonial-attrib">
-              <div class="testimonial-name">Name</div>
-              <div class="testimonial-role">Role · Company</div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ LEADERSHIP ============ -->
-  <section id="leadership">
-    <div class="container">
-      <h2 class="section-header reveal">Leadership &amp; Involvement</h2>
-
-      <div class="leadership-grid">
-        <div class="leadership-card reveal">
-          <h3>She's the First UF</h3>
-          <p class="meta">Gainesville, FL &middot; Jan 2018 – May 2019</p>
-          <p class="role-line">Treasurer (Mar 2018 – May 2019) / Program Director (Jan 2018 – May 2018)</p>
-          <ul>
-            <li>Managed $1,400 budget; donated up to $3,000/semester to fund education for girls in Guatemala, Peru, Ethiopia, Tanzania, and Nepal</li>
-            <li>Designed donor packets with forecasted earnings and logistics</li>
-            <li>Created and delivered presentations on She's the First initiatives</li>
-          </ul>
-        </div>
-
-        <div class="leadership-card reveal">
-          <h3>Sigma Chapter of Delta Phi Omega Sorority</h3>
-          <p class="meta">Gainesville, FL &middot; Jan 2017 – May 2017</p>
-          <p class="role-line">Fundraising Chair</p>
-          <ul>
-            <li>Increased chapter revenue by $1,200 through awareness campaigns</li>
-            <li>Organized cultural night featuring Indian food and performances, generating $400</li>
-          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section class="alt-bg" id="contact">
-    <div class="container">
-      <h2 class="section-header reveal">Let's Connect</h2>
-      <p class="contact-subtext reveal">Open to collaboration, research partnerships, and interesting problems.</p>
-
-      <div class="contact-layout">
-       <div class="contact-list">
-        <a href="mailto:arielgholar@gmail.com" class="contact-item coral reveal">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          <div>
-            <div class="label">Email</div>
-            <div class="value">arielgholar@gmail.com</div>
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="section section--leadership" id="leadership">
+      <div class="container">
+        <div class="section-label">
+          <div class="section-label__bar">
+            <span class="section-label__num">05</span>
+            <span class="section-label__rule" aria-hidden="true"></span>
+            <span class="section-label__kicker">Outside the day job</span>
           </div>
-        </a>
+          <h2 class="section-label__title">Leadership</h2>
+        </div>
 
-        <!-- TODO: replace with real URL -->
-        <a href="https://linkedin.com/in/arielgholar" target="_blank" rel="noopener" class="contact-item reveal">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          <div>
-            <div class="label">LinkedIn</div>
-            <div class="value">linkedin.com/in/arielgholar</div>
-          </div>
-        </a>
+        <div class="leadership__grid">
+          <article class="leadership-card">
+            <div class="leadership-card__dates">Gainesville, FL · Jan 2018 – May 2019</div>
+            <h3 class="leadership-card__org">She&rsquo;s the First UF</h3>
+            <p class="leadership-card__role">Treasurer (Mar 2018 – May 2019) / Program Director (Jan 2018 – May 2018)</p>
+            <ul>
+              <li>Managed $1,400 budget; donated up to $3,000/semester to fund education for girls in Guatemala, Peru, Ethiopia, Tanzania, and Nepal</li>
+              <li>Designed donor packets with forecasted earnings and logistics</li>
+              <li>Created and delivered presentations on She&rsquo;s the First initiatives</li>
+            </ul>
+          </article>
 
-        <a href="https://github.com/arielgholar" target="_blank" rel="noopener" class="contact-item reveal">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
-          <div>
-            <div class="label">GitHub</div>
-            <div class="value">github.com/arielgholar</div>
-          </div>
-        </a>
-       </div>
+          <article class="leadership-card">
+            <div class="leadership-card__dates">Gainesville, FL · Jan 2017 – May 2017</div>
+            <h3 class="leadership-card__org">Sigma Chapter of Delta Phi Omega Sorority</h3>
+            <p class="leadership-card__role">Fundraising Chair</p>
+            <ul>
+              <li>Increased chapter revenue by $1,200 through awareness campaigns</li>
+              <li>Organized cultural night featuring Indian food and performances, generating $400</li>
+            </ul>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="footer">
-        &copy; 2025 Ariel Gholar &middot; Built with intention
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container container--narrow">
+        <div class="eyebrow eyebrow--pink eyebrow--center">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Let&rsquo;s connect
+        </div>
+        <h2 class="contact__heading t-tagline">
+          Open to collaboration, research partnerships, and interesting problems.
+        </h2>
+        <p class="contact__sub">
+          Best reached at <a href="mailto:arielgholar@gmail.com" class="contact__email">arielgholar@gmail.com</a>
+        </p>
+        <div class="contact__buttons">
+          <a href="mailto:arielgholar@gmail.com" class="btn btn--primary">Email me</a>
+          <a href="https://linkedin.com/in/arielgholar" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+          <a href="https://github.com/arielgholar" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">© 2025 Ariel Gholar · Built with intention</span>
+      <span class="footer__credit">Designed in <span class="gradient-text">Iris + Sunset Tech</span></span>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>
